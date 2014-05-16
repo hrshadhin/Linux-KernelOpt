@@ -7,13 +7,13 @@ Benefits of the Project
 =======================
 
 1. can configure,compile and build linux kernel very easily.
-2.Reduce the kernel size
-3.Use less RAM than provided kernel with distributions
-4.Support for new devices and old devices
-5.Boot up the machines fast
-6.Increase the performance of the system.
+2. Reduce the kernel size
+3. Use less RAM than provided kernel with distributions
+4. Support for new devices and old devices
+5. Boot up the machines fast
+6. Increase the performance of the system.
 
 Limitation on current version
 ============================
-1.User can not build kernel with out internect connectivity.
-2.Only super user privilaged members can build the kernel.
+1. User can not build kernel with out internect connectivity.
+2. Only super user privilaged members can build the kernel.
