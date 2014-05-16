@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>628</width>
+    <height>431</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Linux Kernel Optimizer</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons/rec.qrc">
+    <normaloff>:/icon.ico</normaloff>:/icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="text">
+              <string>Start
+Operation</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icons/rec.qrc">
+               <normaloff>:/start.ico</normaloff>:/start.ico</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="text">
+              <string>Stop
+Operation</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icons/rec.qrc">
+               <normaloff>:/stop.ico</normaloff>:/stop.ico</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="text">
+              <string>Open
+Log</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icons/rec.qrc">
+               <normaloff>:/log.ico</normaloff>:/log.ico</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="text">
+              <string>OS
+ info</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icons/rec.qrc">
+               <normaloff>:/info.ico</normaloff>:/info.ico</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="text">
+              <string>Hardware
+ Info</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icons/rec.qrc">
+               <normaloff>:/hdinfo.ico</normaloff>:/hdinfo.ico</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="textEdit"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_currentP">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 170, 255);
+font: 75 14pt &quot;Times New Roman&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Current Process: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_status">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 0, 0);
+font: 75 14pt &quot;Times New Roman&quot;;</string>
+          </property>
+          <property name="text">
+           <string>None</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QProgressBar" name="progressBar">
+        <property name="value">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>628</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionOpen_log"/>
+    <addaction name="actionPC_info"/>
+    <addaction name="actionOS_info"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuActions">
+    <property name="title">
+     <string>Actions</string>
+    </property>
+    <addaction name="actionStart_Operation"/>
+    <addaction name="actionStop_running_job"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionContent"/>
+    <addaction name="actionTecnical_Help"/>
+    <addaction name="actionReport_Bug"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuActions"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionPC_info">
+   <property name="text">
+    <string>PC info</string>
+   </property>
+  </action>
+  <action name="actionSave_PC_info">
+   <property name="text">
+    <string>Save PC info</string>
+   </property>
+  </action>
+  <action name="actionOpen_log">
+   <property name="text">
+    <string>Open log</string>
+   </property>
+  </action>
+  <action name="actionStart_Operation">
+   <property name="text">
+    <string>Start Operation</string>
+   </property>
+  </action>
+  <action name="actionStop_running_job">
+   <property name="text">
+    <string>Stop running job</string>
+   </property>
+  </action>
+  <action name="actionContent">
+   <property name="text">
+    <string>Contents</string>
+   </property>
+  </action>
+  <action name="actionTecnical_Help">
+   <property name="text">
+    <string>Online Help</string>
+   </property>
+  </action>
+  <action name="actionReport_Bug">
+   <property name="text">
+    <string>Report Bug</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionOS_info">
+   <property name="text">
+    <string>OS info</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icons/rec.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/hdinfo.ico</file>
+        <file>icons/info.ico</file>
+        <file>icons/log.ico</file>
+        <file>icons/start.ico</file>
+        <file>icons/stop.ico</file>
+    </qresource>
+</RCC>

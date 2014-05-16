@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/">
+        <file>banner.png</file>
+        <file>login.ico</file>
+        <file>icon.png</file>
+        <file>exit.ico</file>
+        <file>info.ico</file>
+        <file>search.ico</file>
+        <file>setting.ico</file>
+        <file>user.ico</file>
+        <file>add.ico</file>
+        <file>adddb.ico</file>
+        <file>dbload.ico</file>
+        <file>loadd.ico</file>
+        <file>copy.ico</file>
+        <file>date.ico</file>
+        <file>gen.ico</file>
+        <file>openurl.ico</file>
+        <file>save.ico</file>
+        <file>dedb.ico</file>
+        <file>addentity.ico</file>
+        <file>reload.ico</file>
+        <file>delete.ico</file>
+        <file>update.ico</file>
+        <file>remove.ico</file>
+        <file>dbdelete.ico</file>
+        <file>changepass.ico</file>
+        <file>dbpera.ico</file>
+        <file>dev.png</file>
+    </qresource>
+</RCC>
