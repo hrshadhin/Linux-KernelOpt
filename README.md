@@ -18,4 +18,9 @@ Limitation on current version
 1. User can not build kernel with out internect connectivity.
 2. Only super user privilaged members can build the kernel.
 
+Documentation:
+==============
+Doc File: <a href="/doc/Linux_Kernel_Optimization.pdf" alt="doc file">Here</a>
+Presentation File: <a href="/doc/KernelOpt_Presen.otp" alt="Presentation file">Here</a>
+
 Video Link: http://youtu.be/6sa1G_9jCb0
