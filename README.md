@@ -17,3 +17,5 @@ Limitation on current version
 ============================
 1. User can not build kernel with out internect connectivity.
 2. Only super user privilaged members can build the kernel.
+
+Video Link: http://youtu.be/6sa1G_9jCb0
