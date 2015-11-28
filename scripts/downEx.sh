@@ -4,8 +4,8 @@ function download {
          	curl -o kernel.html https://kernel.org
 		link=$(cat kernel.html | grep -A1 "latest_link" | grep "href=" | cut -d '"' -f2)
 		echo $link
-		subLink=${link:1}
-		fulLink="https://kernel.org"$subLink
+		#subLink=${link:1}
+		fulLink=$link
 		echo $fulLink
 		wget -c $fulLink
 }

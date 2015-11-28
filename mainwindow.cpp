@@ -45,7 +45,7 @@ void MainWindow::on_pushButton_clicked()
       p->setReadChannel(QProcess::StandardOutput);
       QString program = "/bin/bash";
       QStringList arguments;
-      arguments <<"./downEx.sh";
+      arguments <<"./scripts/downEx.sh";
       p->start(program, arguments);
       pid= p->pid();
       ui->label_status->setText("<font color='green'>Downloading linux kernel....</font>");
@@ -247,7 +247,7 @@ void MainWindow::runproc2(){
     ui->progressBar->setVisible(false);
     QString program2 = "gnome-terminal";
     QStringList arguments2;
-    arguments2 << "-x" << "bash" << "--rcfile" << "./configComp.sh";
+    arguments2 << "-x" << "bash" << "--rcfile" << "./scripts/configComp.sh";
 
     QProcess *proc = new QProcess(this);
     proc->start(program2, arguments2);

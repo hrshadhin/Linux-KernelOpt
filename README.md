@@ -3,6 +3,14 @@ Linux-KernelOpt
 
 Linux Kernel Optimization Package is an application software that auto configure and build linux kernel from source code according current hardware is present on system.
 
+Build & Usage
+=============
+*This Qt4 C++ base GUI application so first you need to install qt4 and qmake then open up the terminal and put bellow commands
+ $ cd Linux-KernelOpt
+ $ make
+ $ cd Build
+ $ ./KernelOptimizer 
+
 Benefits of the Project
 =======================
 

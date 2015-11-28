@@ -7,8 +7,8 @@
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-
-TARGET = KernelOptiPack
+DESTDIR=Build
+TARGET = KernelOptimizer
 TEMPLATE = app
 
 
@@ -39,3 +39,9 @@ FORMS    += mainwindow.ui \
 
 RESOURCES += \
     icons/rec.qrc
+
+copydata.commands = $(COPY_DIR) $$PWD/scripts $$OUT_PWD/Build
+first.depends = $(first) copydata
+export(first.depends)
+export(copydata.commands)
+QMAKE_EXTRA_TARGETS += first copydata

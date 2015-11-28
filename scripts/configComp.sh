@@ -1,6 +1,6 @@
 #!/bin/bash
 export CONCURRENCY_LEVEL=4
-cd linux-3*
+cd linux-4*
 echo "======Configuring the kernel========"
 cutname="cutomBuild"$(date +%Y%m%d%z)
 make mrproper
